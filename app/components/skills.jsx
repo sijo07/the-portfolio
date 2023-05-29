@@ -8,6 +8,7 @@ import react from "public/assets/skills/react.png";
 import next from "public/assets/skills/nextjs.png";
 import node from "public/assets/skills/node.png";
 import github from "public/assets/skills/github.png";
+import vite from 'public/assets/skills/vitejs.png'
 import Image from "next/image";
 
 const Skills = () => {
@@ -22,38 +23,43 @@ const Skills = () => {
       title: "Next JS",
       src: next,
     },
-    {
+     {
       id: 3,
+      title: "Vite JS",
+      src: vite,
+    },
+    {
+      id: 4,
       title: "Node JS",
       src: node,
     },
     {
-      id: 4,
+      id: 5,
       title: "Tailwind CSS",
       src: tailwind,
     },
     {
-      id: 5,
+      id: 6,
       title: "Bootstrap 5",
       src: bootstrap,
     },
     {
-      id: 6,
+      id: 7,
       title: "Github",
       src: github,
     },
     {
-      id: 7,
+      id: 8,
       title: "JavaScript",
       src: javascript,
     },
     {
-      id: 8,
+      id: 9,
       title: "CSS3",
       src: css,
     },
     {
-      id: 9,
+      id: 10,
       title: "HTML5",
       src: html,
     },
