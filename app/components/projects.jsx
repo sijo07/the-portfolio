@@ -26,21 +26,21 @@ const Projects = () => {
           projects
         </h2>
         <div className="max-w-screen-xl mx-auto px-8 lg:py-20 py-8 text-center md:text-left">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-3 gap-8">
             {project.map(({ id, title, src, link }) => (
               <div
                 key={id}
-                className="shadow-md lg:hover:scale-105 duration-300 rounded-3xl bg-gray-50"
+                className="shadow-md lg:hover:scale-105 duration-300 rounded-3xl bg-indigo-900"
               >
-                <div className="px-4 py-3">
+                <div>
                   <Image src={src} className="object-cover" alt={title} />
                 </div>
                 <div className="px-4 py-3">
-                  <h2 className="text-indigo-900 text-center uppercase font-bold text-xl">
+                  <h2 className="text-white text-center uppercase font-bold text-xl">
                     {title}
                   </h2>
                   <div className="text-center py-5">
-                    <button className="capitalize text-indigo-900 font-bold underline">
+                    <button className="uppercase text-white font-bold underline">
                       <Link href={link}>view project</Link>
                     </button>
                   </div>
