@@ -1,8 +1,8 @@
 import React from "react";
 import fashionapp from "public/assets/projects/fashionapp.jpg";
+import game from '../../public/assets/projects/game.png'
 import Image from "next/image";
 import Link from "next/link";
-import { FcLink } from "react-icons/fc";
 
 const Projects = () => {
   const project = [
@@ -10,6 +10,11 @@ const Projects = () => {
       id: 1,
       title: "the fashion app",
       src: fashionapp,
+    },
+    {
+      id: 2,
+      title: "the game app",
+      src: game,
     },
   ];
   return (
