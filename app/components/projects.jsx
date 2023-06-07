@@ -1,6 +1,6 @@
 import React from "react";
 import fashionapp from "public/assets/projects/fashionapp.jpg";
-import game from '../../public/assets/projects/game.png'
+import game from "../../public/assets/projects/game.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,11 +10,13 @@ const Projects = () => {
       id: 1,
       title: "the fashion app",
       src: fashionapp,
+      link: "https://the-fashionisto.vercel.app/",
     },
     {
       id: 2,
       title: "the game app",
       src: game,
+      link:"https://xo-games.vercel.app/",
     },
   ];
   return (
@@ -25,7 +27,7 @@ const Projects = () => {
         </h2>
         <div className="max-w-screen-xl mx-auto px-8 lg:py-20 py-8 text-center md:text-left">
           <div className="grid lg:grid-cols-2 gap-8">
-            {project.map(({ id, title, src }) => (
+            {project.map(({ id, title, src, link }) => (
               <div
                 key={id}
                 className="shadow-md lg:hover:scale-105 duration-300 rounded-3xl bg-gray-50"
@@ -39,9 +41,7 @@ const Projects = () => {
                   </h2>
                   <div className="text-center py-5">
                     <button className="capitalize text-indigo-900 font-bold underline">
-                      <Link href="https://the-fashionisto.vercel.app/">
-                        view project
-                      </Link>
+                      <Link href={link}>view project</Link>
                     </button>
                   </div>
                 </div>
