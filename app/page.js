@@ -1,8 +1,16 @@
-import { Aboutme, Contact, HomePage, Projects, Skills } from "./components";
+import {
+  Aboutme,
+  Contact,
+  Header,
+  HomePage,
+  Projects,
+  Skills,
+} from "./components";
 
 export default function Home() {
   return (
     <>
+      <Header />
       <HomePage />
       <Skills />
       <Projects />
