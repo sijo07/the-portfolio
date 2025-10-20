@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Profile from "public/assets/Profile.png";
 import { MdExpandMore } from "react-icons/md";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import Link from "next/link";
 
 const HomePage = () => {
@@ -35,36 +36,33 @@ const HomePage = () => {
               href="https://github.com/yourusername"
               target="_blank"
               rel="noreferrer"
-              className="text-indigo-900 hover:text-indigo-700 transition-all duration-300"
+              className="p-3 rounded-full border-2 border-indigo-700 text-indigo-900 hover:text-white hover:bg-indigo-700 transition-all duration-300"
             >
-              GitHub
+              <FaGithub size={24} />
             </a>
-            <span className="text-indigo-900 hover:text-indigo-700 transition-all duration-300">
-              |
-            </span>
             <a
               href="https://linkedin.com/in/yourusername"
               target="_blank"
               rel="noreferrer"
-              className="text-indigo-900 hover:text-indigo-700 transition-all duration-300"
+              className="p-3 rounded-full border-2 border-indigo-700 text-indigo-900 hover:text-white hover:bg-indigo-700 transition-all duration-300"
             >
-              LinkedIn
+              <FaLinkedinIn size={24} />
             </a>
           </div>
         </div>
 
         {/* Right Side: Profile Image */}
-       <div className="flex-1 mt-12 md:mt-0 flex justify-center md:justify-end">
-  <div className="w-80 h-80 md:w-96 md:h-96 relative rounded-full overflow-hidden border-4 border-indigo-900 shadow-lg animate-fadeIn delay-600">
-    <Image
-      src={Profile}
-      alt="Profile"
-      fill
-      style={{ objectFit: 'cover' }}
-      className="rounded-full"
-    />
-  </div>
-</div>
+        <div className="flex-1 mt-12 md:mt-0 flex justify-center md:justify-end">
+          <div className="w-80 h-80 md:w-96 md:h-96 relative rounded-full overflow-hidden border-4 border-indigo-900 shadow-lg animate-fadeIn delay-600">
+            <Image
+              src={Profile}
+              alt="Profile"
+              fill
+              style={{ objectFit: "cover" }}
+              className="rounded-full"
+            />
+          </div>
+        </div>
       </div>
 
       {/* Scroll Down Button */}
