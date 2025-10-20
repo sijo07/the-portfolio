@@ -13,13 +13,11 @@ const educationData = [
     degree: "Master of Computer Applications (MCA)",
     university: "Bharathiar University",
     year: "2023 - 2025",
-    icon: <FaGraduationCap />,
   },
   {
     degree: "Bachelor of Computer Applications (BCA)",
     university: "Bharathiar University",
     year: "2019 - 2022",
-    icon: <FaGraduationCap />,
   },
 ];
 
@@ -111,7 +109,7 @@ const AboutMe = () => {
                   className="flex items-start gap-4 text-white"
                 >
                   <div className="text-indigo-300 text-3xl mt-1">
-                    {edu.icon}
+                    <FaGraduationCap />
                   </div>
                   <div>
                     <p className="font-semibold text-lg">{edu.degree}</p>
