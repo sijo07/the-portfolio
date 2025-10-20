@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Profile from "public/assets/Profile.png";
+import Profile from "@/public/assets/Profile.png";
 import { MdExpandMore } from "react-icons/md";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import Link from "next/link";

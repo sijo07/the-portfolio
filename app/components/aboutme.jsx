@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import profilePic from "/public/assets/Profile.png";
+import profilePic from "@/public/assets/Profile.png";
 import { FaGraduationCap } from "react-icons/fa";
 import { MdLocationOn, MdEmail, MdPhone } from "react-icons/md";
 
