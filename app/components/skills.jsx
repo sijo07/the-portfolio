@@ -2,34 +2,21 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import html from "public/assets/skills/html.png";
-import css from "public/assets/skills/css.png";
-import javascript from "public/assets/skills/javascript.png";
-import bootstrap from "public/assets/skills/bootstrap.png";
-import tailwind from "public/assets/skills/tailwind.png";
-import react from "public/assets/skills/react.png";
-import next from "public/assets/skills/nextjs.png";
-import node from "public/assets/skills/node.png";
-import github from "public/assets/skills/github.png";
-import vite from "public/assets/skills/vitejs.png";
-import wordpress from "public/assets/skills/wordpress.png";
-import mongodb from "public/assets/skills/mongodb.png"; 
-import git from "public/assets/skills/git.png"; 
 
 const skills = [
-  { id: 1, title: "React JS", src: react },
-  { id: 2, title: "Next JS", src: next },
-  { id: 3, title: "Vite JS", src: vite },
-  { id: 4, title: "Node JS", src: node },
-  { id: 5, title: "Wordpress", src: wordpress },
-  { id: 6, title: "MongoDB", src: mongodb },
-  { id: 7, title: "Tailwind CSS", src: tailwind },
-  { id: 8, title: "Bootstrap 5", src: bootstrap },
-  { id: 9, title: "Git", src: git },
-  { id: 10, title: "Github", src: github },
-  { id: 11, title: "JavaScript", src: javascript },
-  { id: 12, title: "CSS3", src: css },
-  { id: 13, title: "HTML5", src: html },
+  { id: 1, title: "React JS", src: "/assets/skills/react.png" },
+  { id: 2, title: "Next JS", src: "/assets/skills/nextjs.png" },
+  { id: 3, title: "Vite JS", src: "/assets/skills/vitejs.png" },
+  { id: 4, title: "Node JS", src: "/assets/skills/node.png" },
+  { id: 5, title: "Wordpress", src: "/assets/skills/wordpress.png" },
+  { id: 6, title: "MongoDB", src: "/assets/skills/mongodb.png" },
+  { id: 7, title: "Tailwind CSS", src: "/assets/skills/tailwind.png" },
+  { id: 8, title: "Bootstrap 5", src: "/assets/skills/bootstrap.png" },
+  { id: 9, title: "Git", src: "/assets/skills/git.png" },
+  { id: 10, title: "Github", src: "/assets/skills/github.png" },
+  { id: 11, title: "JavaScript", src: "/assets/skills/javascript.png" },
+  { id: 12, title: "CSS3", src: "/assets/skills/css.png" },
+  { id: 13, title: "HTML5", src: "/assets/skills/html.png" },
 ];
 
 const containerVariants = {
@@ -47,7 +34,7 @@ const cardVariants = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-full bg-indigo-900 py-16 scroll-mt-20 ">
+    <section id="skills" className="w-full bg-indigo-900 py-16 scroll-mt-20">
       <div className="max-w-screen-xl mx-auto px-6 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl tracking-wider uppercase text-white font-bold mb-12">
           Skills
