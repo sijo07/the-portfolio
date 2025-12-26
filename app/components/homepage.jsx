@@ -8,14 +8,14 @@ import Link from "next/link";
 
 const HomePage = () => {
   return (
-    <section id="home" className="h-screen w-full flex items-center">
+    <section id="home" className="h-screen w-full flex items-center pb-20 md:pb-0 pt-20">
       <div className="max-w-screen-xl mx-auto w-full flex flex-col md:flex-row items-center justify-between px-6 lg:px-24">
         {/* Left Side: Text */}
         <div className="flex-1 text-center md:text-left space-y-6">
           <h1 className="text-5xl md:text-6xl font-bold text-indigo-900 uppercase animate-fadeIn">
             Hi, I'm Sijo
           </h1>
-          <p className="text-gray-700 max-w-lg text-lg md:text-xl font-semibold animate-fadeIn delay-200">
+          <p className="text-gray-700 max-w-lg mx-auto md:mx-0 text-lg md:text-xl font-semibold animate-fadeIn delay-200">
             I develop modern web applications and user-friendly interfaces.
           </p>
           <div className="flex justify-center md:justify-start space-x-4 mt-6 animate-fadeIn delay-400">
@@ -66,7 +66,7 @@ const HomePage = () => {
       </div>
 
       {/* Scroll Down Button */}
-      <div className="absolute bottom-10 w-full flex justify-center">
+      <div className="absolute bottom-24 md:bottom-10 w-full flex justify-center">
         <Link href="/#skills">
           <div className="animate-bounce flex flex-col items-center text-indigo-900">
             <MdExpandMore size={35} />

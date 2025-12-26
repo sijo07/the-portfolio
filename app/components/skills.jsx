@@ -34,7 +34,7 @@ const cardVariants = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-full bg-indigo-900 py-16 scroll-mt-20">
+    <section id="skills" className="w-full bg-indigo-900 py-16 pb-20 md:pb-16 scroll-mt-20">
       <div className="max-w-screen-xl mx-auto px-6 text-center md:text-left">
         <h2 className="text-3xl md:text-5xl tracking-wider uppercase text-white font-bold mb-12">
           Skills

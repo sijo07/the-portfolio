@@ -25,7 +25,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="w-full py-28 bg-gradient-to-b from-indigo-900 to-indigo-800"
+      className="w-full py-28 pb-20 md:pb-28 bg-gradient-to-b from-indigo-900 to-indigo-800"
     >
       {/* Heading */}
       <motion.h1
